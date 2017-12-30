@@ -1,6 +1,9 @@
 import time, random
 
-print(time.time())
+# Time for the text to switch to a new message
+timeToRefresh = 12
+# Time for a new bullet point to be added
+timeForBullet = 1
 
 def nextTime(x):
         return (time.time() + float(x))
@@ -26,9 +29,6 @@ def fragmentLines(inputString):
 
         return returnString
                         
-
-timeToRefresh = 12
-timeForBullet = 1
 
 fAllMessagesAndAuthors = open("allmessages.txt","r")
 allPotentialMessages = fAllMessagesAndAuthors.readlines()
